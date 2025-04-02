@@ -1,0 +1,21 @@
+# Игнорировать папку .vs (настройки Visual Studio)
+**/.vs/
+
+# Игнорировать папки bin и obj (результаты сборки)
+**/bin/
+**/obj/
+
+# Остальные правила из предыдущего шаблона
+*.user
+*.suo
+*.userprefs
+*.nupkg
+*.nuspec
+*.exe
+*.dll
+*.pdb
+*.xml
+*.bak
+*.tmp
+*~
+appsettings.*.json
