@@ -12,8 +12,6 @@
             Dictionary<int, int> res = new(nums.Length);
             for (int i = 0; i < nums.Length; i++)
             {
-                if (target - nums[i] > 0)
-                {
                     if (!res.ContainsKey(target - nums[i]))
                     {
                         if (!res.ContainsKey(nums[i]))
@@ -21,7 +19,6 @@
                     }
                     else
                         return [res[target - nums[i]], i];
-                }
             }
             return new int[] { };
         }
