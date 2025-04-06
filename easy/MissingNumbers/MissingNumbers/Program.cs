@@ -13,9 +13,7 @@ internal class Program
     {
         HashSet<int> data = new(nums.Length);
         for(int i=0; i < nums.Length; i++)
-        {
             data.Add(nums[i]);
-        }
 
         for(int i = 0; i < nums.Length; i++)
         {
