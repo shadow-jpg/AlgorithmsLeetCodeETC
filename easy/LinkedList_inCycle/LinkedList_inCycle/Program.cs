@@ -14,28 +14,29 @@
     {
 
     }
-    public bool HasCycle(ListNode head)
-    {
-        if (head == null)
-            return false;
-        HashSet<ListNode> links = new();
-        ListNode ptr= head;
-        while (ptr.next != null)
-        {
-            if (links.Contains(ptr))
-                return true;
-            else 
-                links.Add(ptr);
-               ptr = head.next;
-        }
+    //НЕ ЭФЕКТИВНОЕ
+    //public bool HasCycle(ListNode head)
+    //{
+    //    if (head == null)
+    //        return false;
+    //    HashSet<ListNode> links = new();
+    //    ListNode ptr= head;
+    //    while (ptr.next != null)
+    //    {
+    //        if (links.Contains(ptr))
+    //            return true;
+    //        else 
+    //            links.Add(ptr);
+    //           ptr = head.next;
+    //    }
 
-        return false;
-    }
+    //    return false;
+    //}
     public bool HasCycle2(ListNode head)
     {
         if (head == null)
             return false;
-        else if (head.next != null) 
+        else if (head.next == null) 
             return false;
         ListNode fastPtr = head;
         ListNode ptr = head;
